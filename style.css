@@ -1,0 +1,103 @@
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 30px;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h1 {
+            color: #00E5FF;
+            margin-bottom: 20px;
+            animation: slideIn 1s ease-out;
+        }
+
+        input, button {
+            padding: 12px;
+            margin: 10px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            width: 80%;
+            max-width: 600px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="text"] {
+            font-family: 'Courier New', Courier, monospace;
+            animation: pulse 1.5s infinite;
+        }
+
+        button {
+            background-color: #00e5ff;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #00b8d4;
+            transform: scale(1.1);
+        }
+
+        #translatedText {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #c1c1c1;
+            word-wrap: break-word;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0;
+            animation: fadeInText 1s ease-in-out forwards;
+        }
+
+        #inputText {
+            animation: typing 1s steps(30, end);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
