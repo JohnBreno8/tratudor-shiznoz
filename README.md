@@ -63,13 +63,13 @@ F → ɿ (exemplo: "fogo" vira ɿogo)
 5. Alfabeto Shiznoz
 
 O alfabeto Shiznoz é composto por 26 letras, com a inclusão de alguns novos símbolos para expressar as modificações da língua. As letras e seus símbolos correspondentes são os seguintes:
-
-A     Ʌ     Δ    H    Z
-E     ƞ     M    S    R
-I     Ⱦ     Ŧ    T    D
-Y     X     G    ɳ    ɿ
-U     ᑎ     C    V    Q
-O 
+ 
+_ A    _    Ʌ     _    Δ    _    H    _    Z
+_ E    _    ƞ     _    M    _    S    _    R
+_ I    _    Ⱦ     _    Ŧ   _   T    _    D
+_ Y    _    X     _    G    _    ɳ    _    ɿ
+_ U    _    ᑎ     _    C    _    V    _    Q
+_ O 
 
 
 6. Exemplos de Texto Adaptado
