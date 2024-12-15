@@ -12,18 +12,29 @@ function traduzirTexto() {
     texto = texto.replace(/\bé\b/g, "gä'n")
                  .replace(/\bhá\b/g, "ki'm");
 
-    // Substituir as letras específicas (J, B, L, P)
-    texto = texto.replace(/\bJ/g, "Y")
-                 .replace(/\bB/g, "O")
-                 .replace(/\bL/g, "R")
-                 .replace(/\bP/g, "W")
-                 .replace(/\bj/g, "Y")
-                 .replace(/\bb/g, "O")
-                 .replace(/\bl/g, "R")
-                 .replace(/\bp/g, "W");
+    // Substituir as letras específicas (J, B, L, P, F)
+    texto = texto.replace(/J/g, "Y").replace(/j/g, "Y")
+                 .replace(/B/g, "O").replace(/b/g, "O")
+                 .replace(/L/g, "R").replace(/l/g, "R")
+                 .replace(/P/g, "W").replace(/p/g, "W")
+                 .replace(/F/g, "ɿ").replace(/f/g, "ɿ");
 
-    // Colocar Z antes de N (somente no meio da palavra)
-    texto = texto.replace(/(\w)N(\w)/g, "$1Z$2");
+    // Substituir "N" por "ƞ"
+    texto = texto.replace(/N/g, "ƞ").replace(/n/g, "ƞ");
+
+    // Adicionar "Z" antes de "ƞ" no meio das palavras
+    texto = texto.replace(/(\w)ƞ(\w)/g, "$1Zƞ$2");
+
+    // Substituir sufixos terminados em "de" por "d"
+    texto = texto.replace(/\b(\w+)de\b/g, "$1d");
+
+    // Substituir prefixos e partes de palavras específicas
+    texto = texto.replace(/tra/g, "Ŧ")
+                 .replace(/tro/g, "Ŧ")
+                 .replace(/tru/g, "Ŧ")
+                 .replace(/tria/g, "Ⱦ")
+                 .replace(/tre/g, "Ⱦ")
+                 .replace(/tri/g, "Ⱦ");
 
     // Exibir o texto traduzido com animação de fade
     let translatedTextDiv = document.getElementById("translatedText");
