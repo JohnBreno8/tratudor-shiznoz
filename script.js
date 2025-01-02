@@ -25,6 +25,8 @@ function traduzirTexto() {
     // Adicionar "Z" antes de "ƞ" no meio das palavras
     texto = texto.replace(/(\w)ƞ(\w)/g, "$1Zƞ$2");
 
+
+    
     // Substituir sufixos terminados em "de" por "d"
     texto = texto.replace(/\b(\w+)de\b/g, "$1d");
 
